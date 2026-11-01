@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Nov  1 19:59:40 2026
+# Process ID: 9724
+# Current directory: C:/Users/TECH POINT/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11400
+# Log file: C:/Users/TECH POINT/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/TECH POINT/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/TECH POINT/Downloads/lab_9_final.xpr/project_10_ff/project_10_ff.xpr}
+update_compile_order -fileset sources_1
+archive_project {C:/Users/TECH POINT/Downloads/lab_9_final.xpr/project_10_ff.xpr.zip} -temp_dir {C:/Users/TECH POINT/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9724-DESKTOP-KENK950} -force -include_local_ip_cache

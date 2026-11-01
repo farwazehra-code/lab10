@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/addressDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addressDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/clockDivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockDivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/dataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/ioInterface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioInterface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/riscv_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/lab10_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab10_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/TECH POINT/Downloads/lab_9_final.xpr/project_10_ff/project_10_ff.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

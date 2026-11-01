@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../Lab10_Complete/Lab10_Complete/rtl/addressDecoder.v" \
+"../../../../../../Lab10_Complete/Lab10_Complete/rtl/clockDivider.v" \
+"../../../../../../Lab10_Complete/Lab10_Complete/rtl/dataMemory.v" \
+"../../../../../../Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v" \
+"../../../../../../Lab10_Complete/Lab10_Complete/rtl/ioInterface.v" \
+"../../../../../../Lab10_Complete/Lab10_Complete/rtl/riscv_core.v" \
+"../../../../../../Lab10_Complete/Lab10_Complete/rtl/lab10_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

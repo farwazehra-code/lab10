@@ -1,0 +1,36 @@
+// Lab 10 machine code: one 32-bit instruction per line (hex), address in the comment
+40000113  // 000: addi sp, zero, 1024
+20000437  // 004: lui s0, 0x20000
+00042023  // 008: sw zero, 0(s0)
+00842283  // 00C: lw t0, 8(s0)
+FE029CE3  // 010: bne t0, zero, WAIT_STATE
+00442503  // 014: lw a0, 4(s0)
+FE050AE3  // 018: beq a0, zero, WAIT_LOOP
+00A42023  // 01C: sw a0, 0(s0)
+008000EF  // 020: jal ra, COUNTDOWN
+FE5FF06F  // 024: jal zero, WAIT_STATE
+FF010113  // 028: addi sp, sp, -16
+00112623  // 02C: sw ra, 12(sp)
+00912423  // 030: sw s1, 8(sp)
+00050493  // 034: addi s1, a0, 0
+00942023  // 038: sw s1, 0(s0)
+00048A63  // 03C: beq s1, zero, CD_DONE
+024000EF  // 040: jal ra, DELAY
+00051863  // 044: bne a0, zero, CD_EXIT
+FFF48493  // 048: addi s1, s1, -1
+FEDFF06F  // 04C: jal zero, CD_LOOP
+00000513  // 050: addi a0, zero, 0
+00812483  // 054: lw s1, 8(sp)
+00C12083  // 058: lw ra, 12(sp)
+01010113  // 05C: addi sp, sp, 16
+00008067  // 060: jalr zero, 0(ra)
+002622B7  // 064: lui t0, 0x262
+5A028293  // 068: addi t0, t0, 0x5A0
+00842303  // 06C: lw t1, 8(s0)
+00031A63  // 070: bne t1, zero, DLY_RST
+FFF28293  // 074: addi t0, t0, -1
+FE029AE3  // 078: bne t0, zero, DLY_LOOP
+00000513  // 07C: addi a0, zero, 0
+00008067  // 080: jalr zero, 0(ra)
+00100513  // 084: addi a0, zero, 1
+00008067  // 088: jalr zero, 0(ra)

@@ -1,0 +1,348 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Oct 30 12:12:21 2026
+# Process ID: 8420
+# Current directory: C:/Users/TECH POINT/Downloads/lab_9_final.xpr/project_10_ff/project_10_ff.runs/synth_1
+# Command line: vivado.exe -log lab10_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab10_top.tcl
+# Log file: C:/Users/TECH POINT/Downloads/lab_9_final.xpr/project_10_ff/project_10_ff.runs/synth_1/lab10_top.vds
+# Journal file: C:/Users/TECH POINT/Downloads/lab_9_final.xpr/project_10_ff/project_10_ff.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab10_top.tcl -notrace
+Command: synth_design -top lab10_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27256
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1028.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab10_top' [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/lab10_top.v:14]
+	Parameter SIM_FAST bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clockDivider' [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/clockDivider.v:8]
+	Parameter DIV bound to: 10 - type: integer 
+	Parameter USE_BUFG bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'clockDivider' (2#1) [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/clockDivider.v:8]
+INFO: [Synth 8-6157] synthesizing module 'riscv_core' [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/riscv_core.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_core' (3#1) [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/riscv_core.v:9]
+INFO: [Synth 8-6157] synthesizing module 'instructionMemory' [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:2]
+	Parameter OPERAND_LENGTH bound to: 31 - type: integer 
+	Parameter SIM_FAST bound to: 0 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'mem.mem' is read successfully [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:15]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:19]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:20]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:21]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:22]
+INFO: [Common 17-14] Message 'Synth 8-311' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'instructionMemory' (4#1) [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/instructionMemory.v:2]
+INFO: [Synth 8-6157] synthesizing module 'addressDecoder' [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/addressDecoder.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'addressDecoder' (5#1) [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/addressDecoder.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dataMemory' [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/dataMemory.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dataMemory' (6#1) [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/dataMemory.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ioInterface' [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/ioInterface.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ioInterface' (7#1) [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/ioInterface.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'lab10_top' (8#1) [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/rtl/lab10_top.v:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1028.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1028.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1028.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1028.262 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/constraints/lab10_basys3.xdc]
+Finished Parsing XDC File [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/constraints/lab10_basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/TECH POINT/Downloads/Lab10_Complete/Lab10_Complete/constraints/lab10_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab10_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab10_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1031.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1031.980 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1031.980 ; gain = 3.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1031.980 ; gain = 3.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1031.980 ; gain = 3.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1031.980 ; gain = 3.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 14    
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1031.980 ; gain = 3.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1031.980 ; gain = 3.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1031.980 ; gain = 3.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1031.980 ; gain = 3.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1038.590 ; gain = 10.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1038.590 ; gain = 10.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1038.590 ; gain = 10.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1038.590 ; gain = 10.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1038.590 ; gain = 10.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1038.590 ; gain = 10.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     2|
+|2     |LUT2 |     2|
+|3     |LUT3 |     1|
+|4     |LUT4 |     3|
+|5     |LUT5 |     3|
+|6     |LUT6 |     3|
+|7     |FDRE |     9|
+|8     |IBUF |     1|
+|9     |OBUF |    16|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1038.590 ; gain = 10.328
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 1038.590 ; gain = 6.609
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1038.590 ; gain = 10.328
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1038.590 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 1056.426 ; gain = 28.164
+INFO: [Common 17-1381] The checkpoint 'C:/Users/TECH POINT/Downloads/lab_9_final.xpr/project_10_ff/project_10_ff.runs/synth_1/lab10_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab10_top_utilization_synth.rpt -pb lab10_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 12:13:32 2026...

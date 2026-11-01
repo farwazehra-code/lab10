@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Oct 30 12:12:21 2026
+# Process ID: 8420
+# Current directory: C:/Users/TECH POINT/Downloads/lab_9_final.xpr/project_10_ff/project_10_ff.runs/synth_1
+# Command line: vivado.exe -log lab10_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab10_top.tcl
+# Log file: C:/Users/TECH POINT/Downloads/lab_9_final.xpr/project_10_ff/project_10_ff.runs/synth_1/lab10_top.vds
+# Journal file: C:/Users/TECH POINT/Downloads/lab_9_final.xpr/project_10_ff/project_10_ff.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab10_top.tcl -notrace
